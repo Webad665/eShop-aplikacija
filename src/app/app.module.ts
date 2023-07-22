@@ -10,6 +10,8 @@ import { CartComponent } from './cart/cart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { RoutingModule } from './app.routing.module';
+import { FlexLayoutModule } from '@angular/flex-layout';  
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { RoutingModule } from './app.routing.module';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    RoutingModule
+    RoutingModule,
+    FlexLayoutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
