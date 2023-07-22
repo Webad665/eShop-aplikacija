@@ -1,11 +1,32 @@
-
 <router-outlet></router-outlet>
+Menu
+<mat-sidenav-container>
 
-<section>
-    
-    <!-- <button mat-icon-button color="primary">
-        <mat-icon>home</mat-icon>
-    </button> -->
+    <mat-sidenav opened #sidenav opened="false">
+        <p>Menu</p>
+    </mat-sidenav>
 
-</section>
+    <mat-sidenav-content>
 
+        <mat-toolbar color="primary">
+            <div>
+                <button (click)="sidenav.toggle()">Show</button>
+            </div>
+
+            <div> LOGO </div>
+            
+            <div>
+                <a routerLink="/signup">Signup</a>
+                <a routerLink="/login">Login</a>
+                <a routerLink="/cart">Cart</a>
+                <a routerLink="/shop">Shop</a>
+            </div>
+
+        </mat-toolbar>
+
+        <router-outlet></router-outlet>
+
+    </mat-sidenav-content>
+
+
+</mat-sidenav-container>
