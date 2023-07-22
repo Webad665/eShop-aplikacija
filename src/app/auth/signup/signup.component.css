@@ -2,3 +2,7 @@ form {
     height: 500px;
     border: 1px solid black;
 }
+
+mat-form-field {
+    width: 450px;
+}
